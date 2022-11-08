@@ -19,7 +19,6 @@ function markupAll(array) {
   } 
 }
 
-
 function markupList(array) {
   return array
     .map(({ name, flags: { svg: flag } }) => {
