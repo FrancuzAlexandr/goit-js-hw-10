@@ -16,9 +16,7 @@ function handleInput(event) {
     counryListEl.innerHTML = '';
     counryinfoEl.innerHTML = '';
     
-    if (inputToFind.length !== 0) {
+    if (inputToFind.length) {
         fetchCountries(inputToFind).then(data => markupAll(data))
-    }
-    if (inputToFind.length === 0) {
     }
 }
